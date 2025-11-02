@@ -40,16 +40,16 @@ export default function Navbar() {
         <div className={`collapse navbar-collapse justify-content-end ${!navbarCollapsed ? 'show' : ''}`}>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <link className="nav-link-custom" to={'/'}>HOME</link>
+              <Link className="nav-link-custom" to={'/'}>HOME</Link>
             </li>
             <li className="nav-item">
-              <link className="nav-link-custom" to={'/Portfolio'}>PORTFOLIO</link>
+              <Link className="nav-link-custom" to={'/Portfolio'}>PORTFOLIO</Link>
             </li>
             <li className="nav-item">
-              <link className="nav-link-custom" to={'/About'}>ABOUT</link>
+              <Link className="nav-link-custom" to={'/About'}>ABOUT</Link>
             </li>
             <li className="nav-item">
-              <link className="nav-link-custom" to={'/Contact'}>CONTACT</link>
+              <Link className="nav-link-custom" to={'/Contact'}>CONTACT</Link>
             </li>
           </ul>
         </div>

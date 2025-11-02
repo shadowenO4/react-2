@@ -1,0 +1,285 @@
+:root {
+  --primary-color: #1abc9c;
+  --secondary-color: #2c3e50;
+}
+
+body {
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.navbar-custom {
+  background-color: var(--secondary-color) !important;
+  padding: 1.5rem 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.navbar-brand-custom {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white !important;
+  text-decoration: none;
+}
+
+.nav-link-custom {
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-link-custom:hover {
+  color: var(--primary-color) !important;
+}
+
+.masthead {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8rem 0 6rem;
+  margin-top: 76px;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.masthead h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 2rem;
+}
+
+.divider-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 3rem;
+}
+
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: currentColor;
+  border-radius: 1rem;
+}
+
+.divider-custom .divider-custom-icon {
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.divider-light .divider-custom-line {
+  background-color: white;
+}
+
+.section-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.portfolio-item {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-item-caption {
+  opacity: 0.9;
+}
+
+.portfolio-item-caption-content {
+  color: white;
+  font-size: 3rem;
+}
+
+.about-section {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 6rem 0;
+}
+
+.btn-outline-light-custom {
+  color: white;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-outline-light-custom:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.footer-custom {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 6rem 0 2rem;
+}
+
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn-social {
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 0.125rem solid white;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-social:hover {
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+.copyright {
+  background-color: #1a252f;
+  padding: 1.5rem 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  padding: 1rem;
+}
+
+.modal-content-custom {
+  background: white;
+  border-radius: 0.5rem;
+  max-width: 1140px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-header-custom {
+  padding: 2rem;
+  border: none;
+  position: relative;
+}
+
+.btn-close-custom {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #6c757d;
+  line-height: 1;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn-close-custom:hover {
+  color: #000;
+}
+
+.modal-body-custom {
+  padding: 2rem;
+  text-align: center;
+}
+
+.close-modal {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.close-modal:hover {
+  background-color: #17a085;
+}
+
+.form-control-custom {
+  width: 100%;
+  padding: 0.75rem 0;
+  font-size: 1.25rem;
+  border: none;
+  border-bottom: 2px solid #dee2e6;
+  border-radius: 0;
+  outline: none;
+  margin-bottom: 3rem;
+}
+
+.form-control-custom:focus {
+  border-bottom-color: var(--primary-color);
+}
+
+.navbar-toggler-custom {
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 0.25rem 0.75rem;
+  background: transparent;
+  color: white;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .masthead h1 {
+    font-size: 3rem;
+  }
+  .section-heading {
+    font-size: 2.5rem;
+  }
+}

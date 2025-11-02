@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [navbarCollapsed, setNavbarCollapsed] = useState(true);
@@ -39,13 +40,16 @@ export default function Navbar() {
         <div className={`collapse navbar-collapse justify-content-end ${!navbarCollapsed ? 'show' : ''}`}>
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link-custom" onClick={() => scrollToSection('portfolio')}>PORTFOLIO</a>
+              <link className="nav-link-custom" to={'/'}>HOME</link>
             </li>
             <li className="nav-item">
-              <a className="nav-link-custom" onClick={() => scrollToSection('about')}>ABOUT</a>
+              <link className="nav-link-custom" to={'/Portfolio'}>PORTFOLIO</link>
             </li>
             <li className="nav-item">
-              <a className="nav-link-custom" onClick={() => scrollToSection('contact')}>CONTACT</a>
+              <link className="nav-link-custom" to={'/About'}>ABOUT</link>
+            </li>
+            <li className="nav-item">
+              <link className="nav-link-custom" to={'/Contact'}>CONTACT</link>
             </li>
           </ul>
         </div>
